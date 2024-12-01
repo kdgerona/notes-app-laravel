@@ -1,6 +1,6 @@
-<x-layout>
-    <div class="note-container py-12">
-        <a href="{{ route('note.create') }}" class="new-note-btn">
+<x-app-layout>
+    <div class="note-container py-12 flex flex-col gap-4">
+        <a href="{{ route('note.create') }}" class="new-note-btn self-end justify-self-end m-0 py-2 px-4 rounded">
             + New Note
         </a>
         <div class="notes">
@@ -26,4 +26,4 @@
             {{ $notes->links() }}
         </div>
     </div>
-</x-layout>
+</x-app-layout>
